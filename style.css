@@ -1016,24 +1016,106 @@ body, html {
   }
   
   .background_1 {
-    background-image: url(Anh_bia.jpg);
+    background-image: url(Anh_bia_1.jpg);
     height: 100%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     z-index: 1;
+    transition: background-image 1.5s ease-in;
   }
   
   .overlay {
-    background-color: #0f4c75;
+    /* background-color: #0f4c75; */
+    background-color: #ffff;
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 60%;
+    opacity: 10%;
     z-index: 2;
+  }
+
+  .open_text_container_1 {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0px;
+    width: fit-content;
+    z-index: 3;
+    animation: opentext1 4s forwards;
+    opacity: 0;
+  }
+
+  @keyframes opentext1 {
+    100%{opacity: 1;}
+    from {top: 25px;}
+    to {top: 30px}
+  }
+
+  .open_text_container_2 {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 45px;
+    width: fit-content;
+    /* float: inherit; */
+    z-index: 3;
+    animation: opentext2 1s forwards;
+    opacity: 0;
+  }
+
+  @keyframes opentext2 {
+    100%{opacity: 1;}
+    from {top: 45px;}
+    to {top: 50px}
+  }
+
+  #text_1 {
+    background-color:rgba(94, 158, 161, 0.6);
+    font-family: "Playfair Display";
+    font-style: italic;
+    /* position: absolute; */
+    /* display: block; */
+    /* top: 20%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    font-size: 27px;
+    line-height: 27px;
+    font-weight: 400;
+    color:#ffff;
+    letter-spacing: 0px;
+    text-align: center;
+    /* opacity: 0; */
+    /* transform: translateX(100%); */
+    transition: all 1.5s ease-in;
+    z-index: 3;
+  }
+
+  #text_1.visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  #text_2 {
+    background-color: rgba(94, 158, 161, 0.6);
+    font-family: 'Alex Brush', sans-serif;
+    /* position: sticky; */
+    /* display: block; */
+    /* top: 40%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    color:#ffff;
+    letter-spacing: 0px;
+    text-align: center;
+    /* transform: translateX(100%); */
+    transition: all 1s ease-in;
+    z-index: 3;
   }
   
   /*
@@ -1046,7 +1128,7 @@ body, html {
     color: #ffff;
     font-family: Nunito Sans;
     overflow: hidden;
-    /*background-color: #333;*/
+    background-color: rgba(94, 158, 161, 0.6);
     position: fixed;
     top: 0;
     width: 100%;
@@ -1054,7 +1136,7 @@ body, html {
   }
 
   .top-nav-bar a{
-    float: left;
+    float: center;
     display: block;
     color: #ffff;
     text-align: center;
@@ -1063,7 +1145,7 @@ body, html {
     font-size: 17px;
   }
 
-      /* stroke */
+    /* stroke */
     .top-nav-bar a {
     position: relative;
     }
