@@ -8,10 +8,10 @@ link.on("click" , function(){
 
   
 const imageLibrary = [
-  'Anh_bia_1.jpg',
-  'Anh_bia_2.jpg',
+  'Anh_bia_1.png',
+  'Anh_bia_2.png',
   // 'Anh_bia_3.jpg',
-  'Anh_bia_4.jpg'
+  'Anh_bia_4.png'
 ];
 
 let currentImageIndex = 0;
