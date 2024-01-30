@@ -1735,7 +1735,7 @@ body, html {
 
   @media screen and (max-width:768px) {
     #rsvp{
-      background-size: 2rem;
+      background-size: 150vh;
       background-position: 46%;
 /*       background-attachment: scroll; */
     }
