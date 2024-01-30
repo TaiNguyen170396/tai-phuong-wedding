@@ -1737,6 +1737,7 @@ body, html {
     #rsvp{
       background-size: 320%;
       background-position: 46%;
+      background-attachment: scroll;
     }
     .rsvp-container{
       min-width: 200px;
