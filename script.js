@@ -21,16 +21,17 @@ var currentScrollPos =window.pageYOffset;
 
   
 const imageLibrary = [
-  'Anh_bia_1.jpg',
-  'Anh_bia_2.jpg',
+  
+  'Anh_bia_3.jpg',
   // 'Anh_bia_3.jpg',
-  'Anh_bia_4.jpg'
+  'Anh_bia_4.jpg',
+  'Anh_bia_2.jpg'
 ];
 
 let currentImageIndex = 0;
 
 function changeBackgroundImage() {
-  const imageLibraryElement = document.querySelector('.background_1');
+  const imageLibraryElement = document.querySelector('.parallax-image2');
   imageLibraryElement.style.backgroundImage = `url(${imageLibrary[currentImageIndex]})`;
   currentImageIndex = (currentImageIndex + 1) % imageLibrary.length;
 }
@@ -211,7 +212,7 @@ function checkBoxes4() {
   let top = window.scrollY;
   let offset = invitation4.offsetTop;
   let height = invitation4.offsetHeight;
-  if (top >= document.getElementById("home").offsetHeight/3 && top < offset + height/1.1){
+  if (top >= document.getElementById("home").offsetHeight/3 && top < offset + height/0.5){
     invitation4.classList.add('show');
   }
     else{
@@ -228,7 +229,7 @@ function checkBoxes3() {
   let top = window.scrollY;
   let offset = invitation3.offsetTop;
   let height = invitation3.offsetHeight;
-  if (top >= document.getElementById("home").offsetHeight/3 && top < offset + height/1.1){
+  if (top >= document.getElementById("home").offsetHeight/3 && top < offset + height/0.5){
     invitation3.classList.add('show');
   }
     else{
@@ -245,7 +246,7 @@ function checkBoxes2() {
   let top = window.scrollY;
   let offset = invitation2.offsetTop;
   let height = invitation2.offsetHeight;
-  if (top >= document.getElementById("home").offsetHeight/3 && top < offset + height/1.1){
+  if (top >= document.getElementById("home").offsetHeight/3 && top < offset + height/0.5){
     invitation2.classList.add('show');
   }
     else{
@@ -278,7 +279,7 @@ function check() {
     let top = window.scrollY;
     let offset = invitation6.offsetTop;
     let height = invitation6.offsetHeight;
-    if (top >= document.getElementById("home").offsetHeight/3 && top < offset + height/1.1){
+    if (top >= document.getElementById("home").offsetHeight/3 && top < offset + height/0.5){
       invitation.classList.add('show');
     }
       else{

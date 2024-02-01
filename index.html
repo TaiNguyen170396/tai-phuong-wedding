@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8" content="width=device-width, initial-scale=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tai-Phuong Wedding</title>
   <link rel="stylesheet" href="style.css"> <!-- Link to your custom CSS file -->
   
@@ -15,6 +15,10 @@
 </head>
 
 <body>
+  <!-- <div class="parrallax-container">
+    
+  </div> -->
+  <div class="parallax-image2"></div>
   <section id ="home" class = "background_1">
     <nav class = "top-nav-bar">
       <a href="#home" class = "logo" ><i class='bx bxs-home-heart'></i></a>
@@ -169,122 +173,120 @@
       </div>
     </div>
   </section>
+  
+  <div class="parallax-container">
 
-  <section id="gallery">
-    <!-- Gallery content goes here -->
-    <!-- <img src="images_4.jpg" alt="anh4"> -->
-  </section>
-  <div>
     <div class="parallax-image1"></div>
-  </div>
-  <div id="rsvp">
-    <!-- RSVP content goes here -->
-    <!-- <div class="parallax-image1 sticky"></div> -->
-    <div class="rsvp-overlay"></div>
-    <div class="rsvp-container">
-      <div class="form-title-container">
-        <h1 class="form-title">Rất mong được gặp bạn!</h1>
-        <p class="form-text">Bạn vui lòng đăng ký để chúng mình có thể chuẩn bị đón tiếp tốt nhất.</p>
-      </div>
-      <form action="" class="register-form">
-        <div>
-          <div class="main-user-info">
-            <!-- <label for="fullname">Tên đầy đủ</label> -->
-            <input type="text" name="fullname" id="fullname" placeholder="Tên đầy đủ của bạn"/>
-          </div>
-          <div class="relationship">
-            <!-- <label for="relationship_with_family">Bạn của</label> -->
-            <select name="relationship_with_family" id="relationship_with_family">
-              <option value="null">Bạn của</option>
-              <option value="bride">Cô dâu</option>
-              <option value="groom">Chú rể</option>
-              <option value="bridefamily">Ba mẹ cô dâu</option>
-              <option value="groomfamily">Ba mẹ chú rể</option>
-            </select>
-          </div>
-          <div class="guest">
-            <!-- <label for="number_of_guest">Số lượng tham dự</label> -->
-            <select name="number_of_guest" id="number_of_guest" >
-              <option value="0">Số lượng tham dự</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="4">5</option>
-              <option value="4">6</option>
-              <option value="4">7</option>            
-            </select>
-          </div>
-          <div class="food-detail-box">
-            <span class="food-title">Bạn dùng tiệc chay hay tiệc mặn?</span>
-            <div class="food-category">
-              <input type="radio" name="food" id="chay"/>
-              <label for="chay">Tiệc chay</label>
-              <input type="radio" name="food" id="man"/>
-              <label for="man">Tiệc mặn</label>
+    
+    <div id="rsvp">
+      <!-- RSVP content goes here -->
+      <!-- <div class="parallax-image1 sticky"></div> -->
+      <div class="rsvp-overlay"></div>
+      <div class="rsvp-container">
+        <div class="form-title-container">
+          <h1 class="form-title">Rất mong được gặp bạn!</h1>
+          <p class="form-text">Bạn vui lòng đăng ký để chúng mình có thể chuẩn bị đón tiếp tốt nhất.</p>
+        </div>
+        <form action="" class="register-form">
+          <div>
+            <div class="main-user-info">
+              <!-- <label for="fullname">Tên đầy đủ</label> -->
+              <input type="text" name="fullname" id="fullname" placeholder="Tên đầy đủ của bạn"/>
+            </div>
+            <div class="relationship">
+              <!-- <label for="relationship_with_family">Bạn của</label> -->
+              <select name="relationship_with_family" id="relationship_with_family">
+                <option value="null">Bạn của</option>
+                <option value="bride">Cô dâu</option>
+                <option value="groom">Chú rể</option>
+                <option value="bridefamily">Ba mẹ cô dâu</option>
+                <option value="groomfamily">Ba mẹ chú rể</option>
+              </select>
+            </div>
+            <div class="guest">
+              <!-- <label for="number_of_guest">Số lượng tham dự</label> -->
+              <select name="number_of_guest" id="number_of_guest" >
+                <option value="0">Số lượng tham dự</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="4">5</option>
+                <option value="4">6</option>
+                <option value="4">7</option>            
+              </select>
+            </div>
+            <div class="food-detail-box">
+              <span class="food-title">Bạn dùng tiệc chay hay tiệc mặn?</span>
+              <div class="food-category">
+                <input type="radio" name="food" id="chay"/>
+                <label for="chay">Tiệc chay</label>
+                <input type="radio" name="food" id="man"/>
+                <label for="man">Tiệc mặn</label>
+              </div>
             </div>
           </div>
+          <div class="form-submit-btn">
+            <input type="submit" value="Đăng ký">
+          </div>
+        </form>
+      </div>
+      <div class="footer-flower-2">
+        <div class="flower-2">
+          <img src="footer flower.png" alt="footer-flower">
         </div>
-        <div class="form-submit-btn">
-          <input type="submit" value="Đăng ký">
-        </div>
-      </form>
-    </div>
-    <div class="footer-flower-2">
-      <div class="flower-2">
-        <img src="footer flower.png" alt="footer-flower">
       </div>
     </div>
-  </div>
+  
 
-  <section id="registry">
-    <!-- Registry content goes here -->
-    <div class="registry-head">Tặng quà</div>
-    <div class="registry-container">
-      <div class="registry-text-panel">
-        <p>Your presence on our wedding day is the most important gift you could ever give us.</p>
-        <p>However, if you would like to buy us something - please check out our registry.</p>
-      </div>
-      <div class="registry-img-panel">
-        <div class = "gift-logo" ><i class='bx bx-gift bx-tada'></i></div>
-      </div>
-      <div class="bank-account-popup">
-        <p class="bank-account-popup-text">Đây là số tài khoản của chúng mình</p>
-        <div class="bx bx-x" id="close-icon"></div>
-        <div class="bank-accoun-container">
-          <div class="account-groom">
-            <img class="account-qr-VCB" src="VCB-Tai.jpeg" alt="VCB-Tai">
-            <div class="account-text">
-              <p class="account-qr-VCB-groom">0381000433877</p>
-              <p>&nbsp;</p>
-              <div class="bx bxs-copy-alt" id="copy-icon-1">Copy</div>
+    <section id="registry">
+      <!-- Registry content goes here -->
+      <div class="registry-head">Tặng quà</div>
+      <div class="registry-container">
+        <div class="registry-text-panel">
+          <p>Your presence on our wedding day is the most important gift you could ever give us.</p>
+          <p>However, if you would like to buy us something - please check out our registry.</p>
+        </div>
+        <div class="registry-img-panel">
+          <div class = "gift-logo" ><i class='bx bx-gift bx-tada'></i></div>
+        </div>
+        <div class="bank-account-popup">
+          <p class="bank-account-popup-text">Đây là số tài khoản của chúng mình</p>
+          <div class="bx bx-x" id="close-icon"></div>
+          <div class="bank-accoun-container">
+            <div class="account-groom">
+              <img class="account-qr-VCB" src="VCB-Tai.jpeg" alt="VCB-Tai">
+              <div class="account-text">
+                <p class="account-qr-VCB-groom">0381000433877</p>
+                <p>&nbsp;</p>
+                <div class="bx bxs-copy-alt" id="copy-icon-1">Copy</div>
+              </div>
+              <img class="account-qr-Momo" src="Momo-Tai.jpeg" alt="Momo-Tai">
+              <div class="account-text">
+                <p class="account-qr-Momo-groom">0906586545</p>
+                <p>&nbsp;</p>
+                <div class="bx bxs-copy-alt" id="copy-icon-2">Copy</div>
+              </div>
             </div>
-            <img class="account-qr-Momo" src="Momo-Tai.jpeg" alt="Momo-Tai">
-            <div class="account-text">
-              <p class="account-qr-Momo-groom">0906586545</p>
-              <p>&nbsp;</p>
-              <div class="bx bxs-copy-alt" id="copy-icon-2">Copy</div>
+            <div class="account-bride">
+              <img class="account-qr-VCB" src="VCB-Be.jpg" alt="VCB-Tai">
+              <div class="account-text">
+                <p class="account-qr-VCB-bride">0161001629758</p>
+                <p>&nbsp;</p>
+                <div class="bx bxs-copy-alt" id="copy-icon-3">Copy</div>
+              </div>
+              <img class="account-qr-Momo" src="Momo-Be.jpg" alt="Momo-Tai">
+              <div class="account-text">
+                <p class="account-qr-Momo-bride">0935268083</p>
+                <p>&nbsp;</p>
+                <div class="bx bxs-copy-alt" id="copy-icon-4">Copy</div>
+              </div>            
             </div>
-          </div>
-          <div class="account-bride">
-            <img class="account-qr-VCB" src="VCB-Be.jpg" alt="VCB-Tai">
-            <div class="account-text">
-              <p class="account-qr-VCB-bride">0161001629758</p>
-              <p>&nbsp;</p>
-              <div class="bx bxs-copy-alt" id="copy-icon-3">Copy</div>
-            </div>
-            <img class="account-qr-Momo" src="Momo-Be.jpg" alt="Momo-Tai">
-            <div class="account-text">
-              <p class="account-qr-Momo-bride">0935268083</p>
-              <p>&nbsp;</p>
-              <div class="bx bxs-copy-alt" id="copy-icon-4">Copy</div>
-            </div>            
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
+    </section>
+  </div>
   <section id="addstory">
     <!-- Gallery content goes here -->
     <!-- <img src="images_6.jpg" alt="anh6"> -->
@@ -294,7 +296,10 @@
     <!-- Contact content goes here -->
     <!-- <img src="images_1.jpg" alt="anh1"> -->
   <!-- </section> -->
-
+  <section id="gallery">
+    <!-- Gallery content goes here -->
+    <!-- <img src="images_4.jpg" alt="anh4"> -->
+  </section>
   <footer>
     <p>Bring your dancing shoe!!!</p>
   </footer>

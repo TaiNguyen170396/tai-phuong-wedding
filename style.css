@@ -5,7 +5,7 @@ html {
   scroll-behavior: smooth;
 }
 a,
-body,
+/* body, */
 button,
 div,
 footer,
@@ -143,11 +143,11 @@ html {
   src: url(/font/Canela-Bold.woff2) format("woff2"),
     url(/font/Canela-Bold.woff) format("woff");
 }
-body {
+/* body {
   font-family: fg;
   font-weight: 300;
   background: #f3f2f1;
-}
+} */
 @-webkit-keyframes rotation {
   0% {
     transform: rotate(0deg);
@@ -172,14 +172,14 @@ body {
   background: rgba(40, 65, 63, 0.5);
   text-shadow: none;
 }
-#app {
+/* #app {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
-}
+} */
 ._is {
   opacity: 0;
 }
@@ -224,7 +224,7 @@ body {
   transform: scaleX(0);
   transform-origin: 0 50%;
 }
-#loader-w {
+/* #loader-w {
   position: fixed;
   z-index: 2;
   top: 0;
@@ -233,7 +233,7 @@ body {
   height: 100%;
   overflow: hidden;
   pointer-events: none;
-}
+} */
 #loader {
   position: absolute;
   top: 0;
@@ -271,7 +271,7 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
-.nav-top {
+/* .nav-top {
   position: absolute;
   top: 2.77778vw;
   font-size: 0.83333vw;
@@ -279,7 +279,7 @@ body {
   font-family: c;
   text-align: center;
   overflow: hidden;
-}
+} */
 #nav-logo-w {
   left: 2.77778vw;
 }
@@ -979,10 +979,16 @@ body {
 }
 
 /*By Tai*/
-body, html {
+html, body  {
     background-color: #ffff;
     margin: 0;
     height: 100%;
+    position: relative;
+    /* top: 0; */
+    z-index: 0;
+    /* position: relative; */
+    /* overflow: auto; */
+    /* contain: paint; */
   }
   
   .OpenPage {
@@ -992,6 +998,7 @@ body, html {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    /* margin-top: -100vh; */
   }
   
   .OpenPage h1 {
@@ -1016,7 +1023,7 @@ body, html {
     font-weight: 200;
   }
   
-  .background_1 {
+  /* .background_1 {
     background-image: url(Anh_bia_1.jpg);
     height: 100%;
     background-position: center;
@@ -1025,8 +1032,64 @@ body, html {
     background-attachment: fixed;
     z-index: 1;
     transition: background-image 1.5s ease-in;
+  } */
+
+  .background_1 {
+    height: 100%;
+    top: 0;
+    position: relative;
   }
   
+  .parallax-image2{
+    background-image: url(Anh_bia_2.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    margin-top: 0;
+    width: 100%;
+    height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    transition: background-image 1.5s ease-in;
+  }
+
+  div.parallax-image1{
+    /* position: relative; */
+    background-image: url(form-background-2.png);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    /* display: flex; */
+    /* position:fixed; */
+    top: 100vh;
+    margin-top: -100vh;
+    width: 100%;
+    height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 0;
+  }
+
+  .parallax-container-2{
+    position: relative;
+    height: 100%;
+  }
+
+  .parallax-container{
+    position: relative;
+    top:0;
+    /* padding-bottom: 100px; */
+    /* height: 100%; */
+  }
+
   .overlay {
     /* background-color: #0f4c75; */
     background-color: #000;
@@ -1131,6 +1194,9 @@ body, html {
     width: 100%;
     margin: auto;
     padding: 40px 0;
+    background-color: #ffff;
+    position: relative;
+    z-index: 2;
     /* min-height: 150vh; */
   }
 
@@ -1241,7 +1307,7 @@ body, html {
     width: 30%;
     z-index: 5;
     position: absolute;
-    transform: translateY(-30%);
+    transform: translateY(-35%);
     left:0;
     right:0;
     margin-left:auto;
@@ -1341,15 +1407,24 @@ body, html {
   }
 
   .groom-bride-page{
-    max-width: 1224px;
-    /* width: 100%; */
+    /* max-width: 1224px; */
+    width: 100%;
     margin: auto;
     /* padding: 40px 0; */
     padding-top: 150px;
     padding-bottom: 150px;
+    background-color: #ffff;
+    position: relative;
+    z-index: 1;
   }
  
   .groom-bride-gallery{
+    max-width: 1224px;
+    /* width: 100%; */
+    margin: auto;
+    /* padding: 40px 0; */
+    /* padding-top: 150px;
+    padding-bottom: 150px; */
     display: flex;
     gap: 20px;
   }
@@ -1560,21 +1635,9 @@ body, html {
     align-items: center;
     z-index: 1;
     display: flex;
-  }
-
-  div.parallax-image1{
-    background-image: url(form-background-2.png);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    top: 100vh;
-    margin-top: -100vh;
-    width: 100vw;
-    height: 100vh;
-    position: -webkit-sticky;
-    position: sticky;
-    position:fixed;
-    z-index: -1;
+    position: relative;
+    padding-bottom: 20%;
+    padding-top: 10%;
   }
 
   /* .sticky{
@@ -1753,11 +1816,12 @@ body, html {
     width: 30%;
     z-index: 1;
     position: absolute;
-    transform: translateY(90%);
+    transform: translateY(70%);
     left:0;
     right:0;
     margin-left:auto;
     margin-right:auto;
+    /* padding-bottom: 50%; */
   }
 
   @media screen and (max-width:768px) {
@@ -1773,6 +1837,15 @@ body, html {
       position: sticky;
       top: 0;
       z-index: 0; */
+      padding-top: 40%;
+      padding-bottom: 40%;
+    }
+    div.parallax-image1{
+      background-position: 46%;
+    }
+    div.parallax-image2{
+      /* height: 0%; */
+      background-position: 60%;
     }
     .rsvp-container{
       min-width: 200px;
@@ -1860,6 +1933,12 @@ body, html {
   }
 
   /* CSS Story */
+
+  #ourstory{
+    background-color: #ffff;
+    position: relative;
+    z-index: 1;
+  }
 
   .ourstory-head{
     font-family: 'Alex Brush', sans-serif;
@@ -2055,6 +2134,7 @@ body, html {
   #registry{
     position: relative;
     background-color: #EFECEC;
+    z-index: 1;
   }
 
   .registry-container{
