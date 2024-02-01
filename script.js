@@ -291,11 +291,11 @@ function check() {
 //Registry
 
 let copyText1 = document.getElementById("copy-icon-1")
-copyText1.addEventListener("click",function(){
+copyText1.onclick=function(){
   const input1 = document.querySelector('.account-qr-VCB-groom').innerHTML;
   navigator.clipboard.writeText(input1);
   copyText1.classList.add('active');
-})
+}
 
 let copyText2 = document.getElementById("copy-icon-2")
 copyText2.addEventListener("click",function(){
