@@ -1098,7 +1098,7 @@ html, body  {
     left: 0;
     right: 0;
     bottom: 0;
-    opacity: 40%;
+    opacity: 30%;
     z-index: 2;
   }
 
@@ -1476,7 +1476,7 @@ html, body  {
     display: flex;
     justify-content: space-between;
     transition: top 0.5s;
-    z-index: 10000;
+    z-index: 9999;
   }
 
   .top-nav-bar ul{
@@ -2223,7 +2223,7 @@ html, body  {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    z-index: 1000;
+    z-index: 10000;
     visibility: hidden;
     animation: zoom;
     animation-duration: 0.6s;
@@ -2344,69 +2344,77 @@ html, body  {
 
   #copy-icon-1:after{
     content: "Copied";
+    font-weight: bold;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: #ffff;
     color: #141e46;
-    padding: 0px 8px;
+    padding: 5px 12px;
     border-radius: 20px;
     display: none;
+    animation: fadein 1s ease-in-out;
   }
 
-  #copy-icon-1:active:after{
+  #copy-icon-1.active:after{
     display:flex;
   }
 
   #copy-icon-2:after{
     content: "Copied";
+    font-weight: bold;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: #ffff;
     color: #141e46;
-    padding: 0px 8px;
+    padding: 5px 12px;
     border-radius: 20px;
     display: none;
+    animation: fadein 1s ease-in-out;
   }
 
-  #copy-icon-2:active:after{
+  #copy-icon-2.active:after{
     display:flex;
   }
 
   #copy-icon-3:after{
     content: "Copied";
+    font-weight: bold;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: #ffff;
     color: #141e46;
-    padding: 0px 8px;
+    padding: 5px 12px;
     border-radius: 20px;
     display: none;
+    animation: fadein 1s ease-in-out;
   }
 
-  #copy-icon-3:active:after{
+  #copy-icon-3.active:after{
     display:flex;
   }
 
   #copy-icon-4:after{
     content: "Copied";
+    font-weight: bold;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     background-color: #ffff;
     color: #141e46;
-    padding: 0px 8px;
+    padding: 5px 12px;
     border-radius: 20px;
     display: none;
+    animation: fadein 1s ease-in-out;
   }
 
-  #copy-icon-4:active:after{
+  #copy-icon-4.active:after{
     display:flex;
   }
 
@@ -2426,4 +2434,10 @@ html, body  {
     #close-icon {
       right: 10px;
     }
+  }
+
+  @keyframes fadein {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
   }

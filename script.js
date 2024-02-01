@@ -295,6 +295,8 @@ copyText1.onclick=function(){
   const input1 = document.querySelector('.account-qr-VCB-groom').innerHTML;
   navigator.clipboard.writeText(input1);
   copyText1.classList.add('active');
+  setTimeout(function(){
+    copyText1.classList.remove('active')}, 1000);
 }
 
 let copyText2 = document.getElementById("copy-icon-2")
@@ -302,6 +304,8 @@ copyText2.addEventListener("click",function(){
   const input2 = document.querySelector('.account-qr-Momo-groom').innerHTML;
   navigator.clipboard.writeText(input2);
   copyText2.classList.add("active");
+  setTimeout(function(){
+    copyText2.classList.remove('active')}, 1000);
 })
 
 let copyText3 = document.getElementById("copy-icon-3")
@@ -309,6 +313,8 @@ copyText3.addEventListener("click",function(){
   const input3 = document.querySelector('.account-qr-VCB-bride').innerHTML;
   navigator.clipboard.writeText(input3);
   copyText3.classList.add("active");
+  setTimeout(function(){
+    copyText3.classList.remove('active')}, 1000);
 })
 
 let copyText4 = document.getElementById("copy-icon-4")
@@ -316,6 +322,8 @@ copyText4.addEventListener("click",function(){
   const input4 = document.querySelector('.account-qr-Momo-bride').innerHTML;
   navigator.clipboard.writeText(input4);
   copyText4.classList.add("active");
+  setTimeout(function(){
+    copyText4.classList.remove('active')}, 1000);
 })
 
 var gift = document.querySelector(".gift-logo");
